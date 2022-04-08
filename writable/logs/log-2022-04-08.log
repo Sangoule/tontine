@@ -1,0 +1,7 @@
+ERROR - 2022-04-08 06:10:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'email(20) UNSIGNED NOT NULL,
+	`motPasse` password(20) UNSIGNED NOT NULL,
+	CONSTR' at line 5
+ERROR - 2022-04-08 06:29:14 --> Unknown table 'tontine.adherents'
+ERROR - 2022-04-08 07:07:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'email(20) UNSIGNED NOT NULL,
+	`motPasse` password(20) UNSIGNED NOT NULL,
+	CONSTR' at line 5
