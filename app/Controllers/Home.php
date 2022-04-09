@@ -4,7 +4,7 @@ namespace App\Controllers;
 helper('html');
 class Home extends BaseController
 {
-    public function index()
+     public function index()
     {
         echo view('layout/entete.php');
         echo view('welcome_message');

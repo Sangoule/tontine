@@ -7,7 +7,7 @@ class Utilisateur extends BaseController
     public function index()
     {
         echo view('layout/entete.php');
-        echo view('utilisateur/index');
+        echo view('utilisateur/connexion');
         echo view('layout/pied.php');
     }
     public function inscription()
