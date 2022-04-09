@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,17 +9,12 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Starter Template · Bootstrap v5.1</title>
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
+
+    
+
     <!-- Bootstrap core CSS -->
 	<?= link_tag("css/bootstrap.min.css") ?>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#7952b3">
-
 
     <style>
       .bd-placeholder-img {
@@ -45,15 +41,33 @@
 <div class="col-lg-8 mx-auto p-3 py-md-5">
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="<?= base_url() ?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <?= img('img/logo.png'); ?>
+        <?= img('img/logo.png')?>
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link">Inscription</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/index" class="nav-link">connexion </a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/presentation" class="nav-link">About</a></li>
+	    <li class="nav-item"><a href="<?= site_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>
     </header>
 
   <main>
+    <h1>Nous contacter</h1>
+    <p class="fs-5 col-md-8">
+      Vous pouvez nous contacter par :
+  </p>
+
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    Created by the Bootstrap team &middot; &copy; 2021
+  </footer>
+</div>
+
+
+<?= script_tag("js/bootstrap.bundle.min.js") ?>
+
+      
+  </body>
+</html>

@@ -39,35 +39,91 @@
   <body>
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
-<!-- <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="<?= base_url() ?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <?= img('img/logo.png')?>
-      </a>
 
-      <ul class="nav nav-pills">
-	    <li class="nav-item"><a href="<?= site_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-</header> -->
 
   <main>
     <h1>Inscription</h1>
     <p class="fs-5 col-md-8">
       veuillez remplir le formulaire suivant pour vous inscrire
     </p>
+    <div class="row g-5">
+    <div class="col-12">
+       
+        <form method="POST" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Prénom</label>
+              <input type="text" name="prenom" class="form-control" id="firstName" placeholder="Saisir le prénom" value="" required>
+              <div class="invalid-feedback">
+                le prénom est obligatoire
+              </div>
+            </div>
 
-  </main>
-  <!-- <footer class="pt-5 my-5 text-muted border-top">
-    Created by the Bootstrap team &middot; &copy; 2021
-  </footer> -->
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Nom</label>
+              <input type="text" name="nom" class="form-control" id="lastName" placeholder="Saisir le nom" value="" required>
+              <div class="invalid-feedback">
+                le nom est obligatoire
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="login" class="form-label">login</label>
+              <input type="text" name="login"  class="form-control" id="login" placeholder="Saisir le login" required>
+              <div class="invalid-feedback">
+                le login est obligatoire
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="motPasse" class="form-label">Mot de passe</label>
+              <input type="password" name="motPasse" class="form-control" id="motPasse" placeholder="Saisir le mot de passe" value="" required>
+              <div class="invalid-feedback">
+              le mot de passe est obligatoire
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="motPasseConf" class="form-label">Confirmation du mot de passe</label>
+              <input type="password" name="motPasseConf" class="form-control" id="motPasseConf" placeholder="Confirmer le mot de passe" value="" required>
+              <div class="invalid-feedback">
+                la Confirmation est obligatoire
+              </div>
+            </div>
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">S'inscrire</button>
+        </form>
+      </div>
+      </div>
+ 
+    </main>
+  
 </div>
 
 
 <?= script_tag("js/bootstrap.bundle.min.js") ?>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
       
   </body>
 </html>

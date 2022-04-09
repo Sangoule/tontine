@@ -39,19 +39,7 @@
   <body>
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
-<!-- <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="<?= base_url() ?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <?= img('img/logo.png')?>
-      </a>
 
-      <ul class="nav nav-pills">
-	    <li class="nav-item"><a href="<?= site_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-</header> -->
 
   <main>
     <h1>Qui somme nous</h1>
@@ -60,9 +48,7 @@
     </p>
 
   </main>
-  <!-- <footer class="pt-5 my-5 text-muted border-top">
-    Created by the Bootstrap team &middot; &copy; 2021
-  </footer> -->
+
 </div>
 
 
