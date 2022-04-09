@@ -6,7 +6,8 @@ class Home extends BaseController
 {
      public function index()
     {
-        echo view('layout/entete.php');
+        $data=["titre"=>"Sama Tontine::Faciliter la gestion des tontines","menuActif"=>"accueil"];
+        echo view('layout/entete.php',$data);
         echo view('welcome_message');
         echo view('layout/pied.php');
 

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Starter Template · Bootstrap v5.1</title>
+    <title><?= $titre ?></title>
 
     <!-- Bootstrap core CSS -->
 	<?= link_tag("css/bootstrap.min.css") ?>
@@ -49,10 +49,10 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link">Inscription</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/index" class="nav-link">connexion </a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/presentation" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link <?= $menuActif=="accueil"?"active":"" ?>" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link <?= $menuActif=="inscription"?"active":"" ?> ">Inscription</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/index" class="nav-link <?= $menuActif=="connexion"?"active":"" ?>" >connexion </a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/presentation" class="nav-link <?= $menuActif=="presentation"?"active":"" ?>">About</a></li>
       </ul>
     </header>
 
