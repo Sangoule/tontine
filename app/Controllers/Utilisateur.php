@@ -12,4 +12,8 @@ class Utilisateur extends BaseController
     {
         return view('utilisateur/inscription');
     }
+    public function presentation()
+    {
+        return view('presentation');
+    }
 }
