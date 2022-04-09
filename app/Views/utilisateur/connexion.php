@@ -42,30 +42,21 @@
 
 
   <main>
-    <h1>Connexion</h1>
-    <p class="fs-5 col-md-8">
-      veuillez saisir votre login et votre mot de passe
-    </p>
+    <h1>Entrer votre login et le mot de passe</h1>
+    
     <form>
-        <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+       
 
         <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
+          <input type="text" name="login" class="form-control" id="login" placeholder="Entrer le login">
+          <label for="login">login</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
+          <input type="password" name="password" class="form-control" id="MotPasse" placeholder="Entrer le mot de passe">
+          <label for="MotPasse">Mot de passe</label>
         </div>
-
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>
+       
    </form>
 
   </main>
