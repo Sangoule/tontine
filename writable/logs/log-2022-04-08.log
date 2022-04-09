@@ -33,3 +33,12 @@ CRITICAL - 2022-04-08 20:04:03 --> Invalid file: utilisateur/inscription.php
 #5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-04-08 20:16:27 --> Invalid file: utilisateur/presentation.php
+#0 C:\laragon\www\tontine\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilisateur/pre...')
+#1 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('utilisateur/pre...', Array, true)
+#2 C:\laragon\www\tontine\app\Controllers\Home.php(29): view('utilisateur/pre...')
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Home->presentation()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

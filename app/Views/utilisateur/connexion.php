@@ -54,9 +54,9 @@
 </header> -->
 
   <main>
-    <h1>Inscription</h1>
+    <h1>Connexion</h1>
     <p class="fs-5 col-md-8">
-      veuillez remplir le formulaire suivant pour vous inscrire
+      veuillez saisir votre login et votre mot de passe
     </p>
 
   </main>

@@ -54,9 +54,9 @@
 </header> -->
 
   <main>
-    <h1>Inscription</h1>
+    <h1>Qui somme nous</h1>
     <p class="fs-5 col-md-8">
-      veuillez remplir le formulaire suivant pour vous inscrire
+      Notre entreprise SenTec est une entreprise qui apporte des solution numérique a vos problémes.
     </p>
 
   </main>

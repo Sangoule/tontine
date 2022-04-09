@@ -50,9 +50,9 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link">Inscription</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/connexion" class="nav-link">connexion </a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/home/contact" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/index" class="nav-link">Inscription</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link">connexion </a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/presentation" class="nav-link">About</a></li>
       </ul>
     </header>
 

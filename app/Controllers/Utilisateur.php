@@ -6,14 +6,20 @@ class Utilisateur extends BaseController
 {   
     public function index()
     {
-        return view('utilisateur/index');
+        echo view('layout/entete.php');
+        echo view('utilisateur/index');
+        echo view('layout/pied.php');
     }
     public function inscription()
-    {
-        return view('utilisateur/inscription');
+    {   
+        echo view('layout/entete.php');
+        echo view('utilisateur/inscription');
+        echo view('layout/pied.php');
     }
     public function presentation()
     {
-        return view('presentation');
+        echo view('layout/entete.php');
+        echo view('utilisateur/presentation');
+        echo view('layout/pied.php');
     }
 }
