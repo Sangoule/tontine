@@ -10,9 +10,6 @@
     <title>Starter Template · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
-
-    
-
     <!-- Bootstrap core CSS -->
 	<?= link_tag("css/bootstrap.min.css") ?>
 
@@ -54,9 +51,8 @@
     </header> -->
 
   <main>
-    <h1>Get started with Bootstrap</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
-
+    <h1>Gerer sama tontine </h1>
+    <p class="fs-5 col-md-8">Facilement gerer ma tontine une interface conviviale, envoi des sms de rappel, suivi des cotisations, parametrage d'une tontine .</p>
   </main>
   <!-- <footer class="pt-5 my-5 text-muted border-top">
     Created by the Bootstrap team &middot; &copy; 2021
