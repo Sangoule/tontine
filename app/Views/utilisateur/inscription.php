@@ -49,7 +49,7 @@
     <div class="row g-5">
     <div class="col-12">
        
-        <form method="POST" class="needs-validation" novalidate>
+        <form method="post" class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Prénom</label>
