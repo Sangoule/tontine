@@ -89,3 +89,341 @@ CRITICAL - 2022-04-10 09:16:06 --> Class 'CodeIgniter\Validation\UtilisateurRule
 #5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-04-10 07:43:56 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:44:09 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:46:19 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:46:27 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:49:55 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:52:03 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:52:07 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:53:00 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:53:33 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:56:56 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:57:20 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 07:58:49 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:03:29 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:04:19 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:07:04 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:09:33 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:10:00 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:10:38 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:11:20 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:11:37 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(64): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:13:02 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(60): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:13:10 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(60): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:14:33 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(60): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:15:33 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(60): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:15:45 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:15:56 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:16:38 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(63): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->inscription()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:35:45 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:39:41 --> Class 'CodeIgniter\Validation\UtilisateurRules' not found
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(115): CodeIgniter\Validation\Validation->loadRuleSets()
+#1 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#2 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-10 08:41:08 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:42:10 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:47:20 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:47:23 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:47:27 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:49:12 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(30): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:50:46 --> required  is not a valid rule.
+#0 C:\laragon\www\tontine\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\laragon\www\tontine\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('motPasse', 'motPasse', NULL, Array, Array)
+#2 C:\laragon\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(31): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-10 08:55:40 --> Undefined index: id
+#0 C:\laragon\www\tontine\app\Controllers\Utilisateur.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Utilisateur->index()
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utilisateur))
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

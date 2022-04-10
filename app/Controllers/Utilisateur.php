@@ -21,11 +21,12 @@ class Utilisateur extends BaseController
         return redirect()->to('utilisateur');
     }
     public function index()
-    {    $data=["titre"=>"Se Connecter","menuActif"=>"connexion"];
+    { 
+           $data=["titre"=>"Se Connecter","menuActif"=>"connexion"];
         if($this->request->getMethod()=="post"){
             $reglesValid=[
                 "login"=>["rules"=>"required|valid_email","errors"=>["required"=>"login obligatoire ","valid_email"=>"email nom valide"]],
-                "motPasse"=>["rules"=>"required | utilisateurValide[login, motPasse]","errors"=>["required"=>"le mot de passe est obligatoire ","utilisateurValide"=>"Email et /ou mot de passe incorrect(s)"]],
+                "motPasse"=>["rules"=>"required|utilisateurValide[login, motPasse]","errors"=>["required"=>"le mot de passe est obligatoire ","utilisateurValide"=>"Email et /ou mot de passe incorrect(s)"]],
             ];
             if(!$this->validate($reglesValid)){
                 $data['validation']=$this->validator;
@@ -33,15 +34,16 @@ class Utilisateur extends BaseController
             else{//login et mot de passe correct
                 $model= new AdherentModel();
                 $user = $model->where('login',$this->request->getPost('login'))->where('motPasse',$this->request->getPost('motPasse'))->first();
+                var_dump($user);
                 $data=[
-                    'id'=>$user["id"],
+                    'id'=>$user["idAdherent"],
                     'nom'=>$user["nom"],
                     'prenom'=>$user["prenom"],
                     'login'=>$user["login"],
                     'profil'=>$user["profil"],
                 ];
                 session()->set($data);
-                return redirect()->to(base_url($user["profil"]));
+                return redirect()->to(base_url($user["profil"])); 
             }
         }
         echo view('layout/entete.php',$data);
@@ -61,24 +63,25 @@ class Utilisateur extends BaseController
 
             ];
             if(!$this->validate($reglesValid)){
-                $data['validation']=$this->validator;
+                $data["validation"]=$this->validator;
             }
             else{ //insertion dans la base de données
-                $adherentData=[
-                    "Nom"=>$this->request->getPost('nom'),
-                    "prenom"=>$this->request->getPost('prenom'),
-                    "login"=>$this->request->getPost('login'),
-                    "motPasse"=>$this->request->getPost('motPasse'),
-                    "profil"=>"adherent"
-                ];
-            $adherent= new AdherentModel();
-            $adherent->insert($adherentData);
-            $session=session();
-            $session->setFlashdata('success','Inscription réussi. Connectez-vous');
-            return redirect()->to('utilisateur');
+                    $adherentData=[
+                        "Nom"=>$this->request->getPost('nom'),
+                        "prenom"=>$this->request->getPost('prenom'),
+                        "login"=>$this->request->getPost('login'),
+                        "motPasse"=>$this->request->getPost('motPasse'),
+                        "profil"=>"adherent"
+                    ];
+                $adherent= new AdherentModel();
+                $adherent->insert($adherentData);
+                $session=session();
+                $session->setFlashdata('success','Inscription réussi. Connectez-vous');
+                return redirect()->to('utilisateur');
             }
 
         }
+        
         echo view('layout/entete.php',$data);
         echo view('utilisateur/inscription');
         echo view('layout/pied.php');

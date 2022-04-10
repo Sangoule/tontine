@@ -63,7 +63,7 @@
           <label for="login">Email</label>
         </div>
         <div class="form-floating">
-          <input type="password" name="password" class="form-control" id="MotPasse" placeholder="Entrer le mot de passe">
+          <input type="password" name="motPasse" class="form-control" id="MotPasse" placeholder="Entrer le mot de passe">
           <label for="MotPasse">Mot de passe</label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>

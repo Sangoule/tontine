@@ -6,7 +6,7 @@ use CodeIgniter\Validation\CreditCardRules;
 use CodeIgniter\Validation\FileRules;
 use CodeIgniter\Validation\FormatRules;
 use CodeIgniter\Validation\Rules;
-use CodeIgniter\Validation\UtilisateurRules;
+use App\Validation\UtilisateurRules;
 
 class Validation
 {
