@@ -11,9 +11,17 @@ class Utilisateur extends BaseController
         echo view('layout/pied.php');
     }
     public function inscription()
-    {   
-        
-        echo view('layout/entete.php');
+    {  
+        $data=["titre"=>"Sama Tontine:: S'inscrire sur la plateforme","menuActif"=>"inscription"]; 
+        if($this->request->getMethod()=="post"){
+            echo "Nom :".$this->request->getPost('nom').'</br>';
+            echo "Prenom :".$this->request->getPost('prenom').'</br>';
+            echo "login :".$this->request->getPost('login').'</br>';
+            echo "Mot de passe :".$this->request->getPost('motPasse').'</br>';
+            echo "Mot de passe :".$this->request->getPost('motPasseConf').'</br>';
+
+        }
+        echo view('layout/entete.php',$data);
         echo view('utilisateur/inscription');
         echo view('layout/pied.php');
     }
