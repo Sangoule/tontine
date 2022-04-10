@@ -42,19 +42,27 @@
 
 
   <main>
-    <h1>Inscription</h1>
-    <p class="fs-5 col-md-8">
-      veuillez remplir le formulaire suivant pour vous inscrire
-    </p>
+    
     <div class="row g-5">
     <div class="col-12">
-       
-        <form method="post" class="needs-validation" novalidate>
+    <h1 class="mb-3">Créer un compte</h1>
+    <?php if(isset($validation)):?>
+     <div class="row alert alert-danger">
+       <?= $validation->listErrors();?>
+     </div>    
+     <?php endif;?>
+     <?php if(session()->get('success')):?>
+        <div class="alert-success alert" role="alert">
+            <?= session()->get('success')?>
+        </div>
+        <?php endif ?>
+      
+        <form method="post" class="needs-validation" >
          
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Prénom</label>
-              <input type="text" name="prenom" class="form-control" id="firstName" placeholder="Saisir le prénom" value="" required>
+              <input type="text" name="prenom" class="form-control" id="firstName" placeholder="Saisir le prénom" value="<?= set_value("prenom")?>" >
               <div class="invalid-feedback">
                 le prénom est obligatoire
               </div>
@@ -62,7 +70,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Nom</label>
-              <input type="text" name="nom" class="form-control" id="lastName" placeholder="Saisir le nom" value="" required>
+              <input type="text" name="nom" class="form-control" id="lastName" placeholder="Saisir le nom" value="<?= set_value("prenom")?>" >
               <div class="invalid-feedback">
                 le nom est obligatoire
               </div>
@@ -70,14 +78,14 @@
 
             <div class="col-12">
               <label for="login" class="form-label">login</label>
-              <input type="text" name="login"  class="form-control" id="login" placeholder="Saisir le login" required>
+              <input type="text" name="login"  class="form-control" id="login" placeholder="Saisir le login" value="<?= set_value("login")?>" >
               <div class="invalid-feedback">
                 le login est obligatoire
               </div>
             </div>
             <div class="col-sm-6">
               <label for="motPasse" class="form-label">Mot de passe</label>
-              <input type="password" name="motPasse" class="form-control" id="motPasse" placeholder="Saisir le mot de passe" value="" required>
+              <input type="password" name="motPasse" class="form-control" id="motPasse" placeholder="Saisir le mot de passe" value="" >
               <div class="invalid-feedback">
               le mot de passe est obligatoire
               </div>
@@ -85,7 +93,7 @@
 
             <div class="col-sm-6">
               <label for="motPasseConf" class="form-label">Confirmation du mot de passe</label>
-              <input type="password" name="motPasseConf" class="form-control" id="motPasseConf" placeholder="Confirmer le mot de passe" value="" required>
+              <input type="password" name="motPasseConf" class="form-control" id="motPasseConf" placeholder="Confirmer le mot de passe" value="" >
               <div class="invalid-feedback">
                 la Confirmation est obligatoire
               </div>

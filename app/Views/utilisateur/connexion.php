@@ -41,15 +41,26 @@
 <div class="col-lg-8 mx-auto p-3 py-md-5">
 
 
-  <main>
-    <h1>Entrer votre login et le mot de passe</h1>
-    
-    <form>
+  <main class="<?= $menuActif=="connexion"?"form-signin text-center":""?>">
+      <h1>Login et password</h1>
+      <?php if(isset($validation)):?>
+     <div class="row alert alert-danger">
+       <?= $validation->listErrors();?>
+     </div>    
+     <?php endif;?>
+      <?php if(session()->get('success')):?>
+        <div class="alert-success alert" role="alert">
+            <?= session()->get('success')?>
+        </div>
+        <?php endif ?>
+      
+
+    <form method="post">
        
 
         <div class="form-floating">
-          <input type="text" name="login" class="form-control" id="login" placeholder="Entrer le login">
-          <label for="login">login</label>
+          <input type="text" name="login" class="form-control" id="login" placeholder="Entrer le login" value="<?= set_value("login")?>">
+          <label for="login">Email</label>
         </div>
         <div class="form-floating">
           <input type="password" name="password" class="form-control" id="MotPasse" placeholder="Entrer le mot de passe">

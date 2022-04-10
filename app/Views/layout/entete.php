@@ -73,13 +73,26 @@
       <a href="<?= base_url() ?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <?= img('img/logo.png'); ?>
       </a>
-
+<?php if(session()->get("profil")=="adherent"): ?>
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="<?= base_url() ?>/adherent" class="nav-link <?= $menuActif=="adherentAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/adherent/adhesion" class="nav-link <?= $menuActif=="adhesion"?"active":"" ?> ">Adhesion</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link" >Déconnexion </a></li>
+    </ul>
+  <?php elseif (session()->get("profil")=="adminitrateur"): ?>
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="<?= base_url() ?>/administrateur" class="nav-link <?= $menuActif=="administrateurAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/adherent/gestion" class="nav-link <?= $menuActif=="gestionUtilisateurs"?"active":"" ?> ">gestion</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link`" >Déconnexion </a></li>
+    </ul>
+    <?php else : ?>
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="<?= base_url() ?>" class="nav-link <?= $menuActif=="accueil"?"active":"" ?>" aria-current="page">Accueil</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/inscription" class="nav-link <?= $menuActif=="inscription"?"active":"" ?> ">Inscription</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/index" class="nav-link <?= $menuActif=="connexion"?"active":"" ?>" >connexion </a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/presentation" class="nav-link <?= $menuActif=="presentation"?"active":"" ?>">About</a></li>
       </ul>
+      <?php endif ?>
 </header>
 
   <main class="<?= $menuActif=="connexion"?"form-signin text-center":"" ?>">
