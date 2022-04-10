@@ -34,7 +34,7 @@ class Utilisateur extends BaseController
             else{//login et mot de passe correct
                 $model= new AdherentModel();
                 $user = $model->where('login',$this->request->getPost('login'))->where('motPasse',$this->request->getPost('motPasse'))->first();
-                var_dump($user);
+                
                 $data=[
                     'id'=>$user["idAdherent"],
                     'nom'=>$user["nom"],
@@ -67,7 +67,7 @@ class Utilisateur extends BaseController
             }
             else{ //insertion dans la base de données
                     $adherentData=[
-                        "Nom"=>$this->request->getPost('nom'),
+                        "nom"=>$this->request->getPost('nom'),
                         "prenom"=>$this->request->getPost('prenom'),
                         "login"=>$this->request->getPost('login'),
                         "motPasse"=>$this->request->getPost('motPasse'),

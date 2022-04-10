@@ -4,5 +4,5 @@ use CodeIgniter\Model;
 
 class AdherentModel extends Model{
     protected $table="adherent";
-    protected $allowedFields=["nom","prenom","login","motPasse","profil"];
+    protected $allowedFields=["prenom","nom","login","motPasse","profil"];
 }
