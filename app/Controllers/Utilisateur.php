@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-helper('html');
+helper(['html','form']);
 class Utilisateur extends BaseController
 {   
     public function index()
@@ -12,8 +12,8 @@ class Utilisateur extends BaseController
     }
     public function inscription()
     {   
-        $data=["titre"=>"inscription","menuActif"=>"inscription"];
-        echo view('layout/entete.php',$data);
+        
+        echo view('layout/entete.php');
         echo view('utilisateur/inscription');
         echo view('layout/pied.php');
     }
