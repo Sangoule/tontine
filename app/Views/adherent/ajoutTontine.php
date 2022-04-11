@@ -64,7 +64,7 @@
               <?= form_input(['name'=>'label','class'=>"form-control",'placeholder'=>"Saisir le label",'value'=>set_value("label")]) ?>
             </div>
             <div class="col-sm-6">
-              <label for="label" class="form-label">Periodicite</label>
+              <label for="periodicite" class="form-label">Périodicité</label>
               <?= form_dropdown('periodicite',$periodicite,set_value("periodicite"),['class'=>"form-control"]) ?>
             </div>
             <div class="col-sm-6">

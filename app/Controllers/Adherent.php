@@ -5,6 +5,13 @@ use App\Models\TontineModel;
 use CodeIgniter\I18n\Time;
 helper(['html','form']);
 class Adherent extends BaseController{
+    public function suprimerTontine($idTontine){
+        $tontine=new TontineModel();
+        $tontine->delete($idTontine);
+        $session=session();
+        $session->setFlashdata('success ajout de tontine', 'Supression effectuée');
+        return redirect()->to(base_url().'/adherent');
+    }
     public function modifierTontine($idTontine){
         $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adherentAcc"];
         $data['periodicite']=['mensuelle'=>'mensuelle','hebdomadaire'=>'hebdomadaire'];
