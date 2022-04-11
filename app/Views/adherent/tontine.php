@@ -41,6 +41,22 @@
                     <li class="list-group-item">
                         <h5><?= $participants['prenom']." ".$participants['nom'] ?></h5>
                         <p>Cotisation <?= $participants['montant']?> CFA</p>
+                        <?php if (session()->get('successajCotise')) : ?>
+                            <div class="alert-success alert" role="alert">
+                                 <?= session()->get('successajCotise') ?>
+                            </div>
+                        <?php endif ?>
+                        <?php $i=0;
+                            if (isset($cotisations[$participants["idAdherent"]])) : 
+                                for($i=0;$i<$cotisations[$participants["idAdherent"]];$i++):
+                        ?>
+                         <span class="badge rounded-pill bg-success">
+                            <?= date_format(date_create($echeances[$i]["date"]),"d/m/Y");?>
+                        </span>
+                        <?php endfor; endif;?>
+                        <p class="mt-3">
+                             <a class="btn btn-warning" href="<?php $a=$i+1; echo base_url("adherent/payerEcheance/".$participants["idAdherent"]."/".$maTontine["id"])."/".$a; ?>">Payer</a>
+                        </p>
                     </li>
 
             <?php endforeach; ?>

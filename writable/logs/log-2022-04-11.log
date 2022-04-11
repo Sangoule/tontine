@@ -391,3 +391,218 @@ CRITICAL - 2022-04-11 09:22:37 --> Trying to access array offset on value of typ
 #7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-04-11 09:27:22 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(94): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:37:23 --> Undefined index: idAdherant
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(94): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('1')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:37:23 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(94): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 09:54:41 --> Unknown column 'aherent.id' in 'field list'
+CRITICAL - 2022-04-11 09:54:41 --> Unknown column 'aherent.id' in 'field list'
+#0 C:\laragon\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`a...', 0)
+#1 C:\laragon\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`a...')
+#2 C:\laragon\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`a...')
+#3 C:\laragon\www\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`a...', Array, false)
+#4 C:\laragon\www\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tontine\app\Models\AdherentModel.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\tontine\app\Controllers\Adherent.php(103): App\Models\AdherentModel->cotiser('1')
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('1')
+#8 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-11 09:54:47 --> Unknown column 'aherent.id' in 'field list'
+CRITICAL - 2022-04-11 09:54:47 --> Unknown column 'aherent.id' in 'field list'
+#0 C:\laragon\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`a...', 0)
+#1 C:\laragon\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`a...')
+#2 C:\laragon\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`a...')
+#3 C:\laragon\www\tontine\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`a...', Array, false)
+#4 C:\laragon\www\tontine\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tontine\app\Models\AdherentModel.php(18): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\tontine\app\Controllers\Adherent.php(103): App\Models\AdherentModel->cotiser('1')
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('1')
+#8 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#9 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-11 09:55:52 --> Undefined index: idAdherant
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(107): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('1')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:55:52 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(107): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:57:17 --> Undefined index: idAdherant
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 58, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(107): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('1')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:57:17 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(107): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:57:31 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(107): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 09:57:38 --> Class 'App\Controllers\cotiseModel' not found
+#0 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->payerEcheance('1', '1', '1')
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 09:59:01 --> Class 'App\Controllers\cotiseModel' not found
+#0 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->payerEcheance('1', '1', '1')
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-11 09:59:02 --> Class 'App\Controllers\cotiseModel' not found
+#0 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->payerEcheance('1', '1', '1')
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-11 10:00:05 --> Table 'tontine.cotise' doesn't exist
+CRITICAL - 2022-04-11 10:00:05 --> Table 'tontine.cotise' doesn't exist
+#0 C:\laragon\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\tontine\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\tontine\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\tontine\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\tontine\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\tontine\app\Controllers\Adherent.php(15): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->payerEcheance('1', '1', '1')
+#9 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#10 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-11 10:02:47 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 10:03:25 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 10:03:29 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 10:03:37 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 10:03:42 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-11 10:03:46 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Views\adherent\tontine.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\tontine\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\tontine\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\tontine\system\Common.php(1089): CodeIgniter\View\View->render('adherent/tontin...', Array, true)
+#4 C:\laragon\www\tontine\app\Controllers\Adherent.php(108): view('adherent/tontin...')
+#5 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->tontine('starter-templat...')
+#6 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#7 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

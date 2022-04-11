@@ -2,13 +2,23 @@
 namespace App\Controllers;
 //1. rendre accessible  la classe Model
 use CodeIgniter\I18n\Time;
+use App\Models\CotiseModel;
 use App\Models\TontineModel;
 use App\Models\AdherentModel;
 use App\Models\EcheanceModel;
 use App\Models\ParticipeModel;
 helper(['html','form']);
 class Adherent extends BaseController{
-    
+    public function payerEcheance($idAdherent,$idtontine,$idEcheance){
+        //1.inserer la cotisation à travers le modele cotise
+        $modelcotise=new CotiseModel();
+        $modelcotise->insert(["idAdherent"=>$idAdherent,"idEcheance"=>$idEcheance]);
+        //2.Revenir sur la page tontine avec le message de confirmation
+        $session=session();
+        $session->setFlashdata("successajCotise"," Cotisations enregistré");
+        return redirect()->to("adherent/tontine/".$idtontine);
+
+    }
     public function genererEcheance($idTontine){
         //1. Recuperer les informations sur la tontine courante
             $model=new TontineModel();
@@ -90,6 +100,10 @@ class Adherent extends BaseController{
         $echeance=$modelEcheance->echeancesTontine($idTontine);
         //6. Ajouter la liste aux données transmises a la vue
         $data['echeances']=$echeance;
+        //7-
+        $cotisations=$modelAd->cotiser($idTontine);
+        //8. Ajouter la liste aux données transmise
+        $data['cotisations']=$cotisations;
         echo view('layout/entete',$data);
         echo view('adherent/tontine');
         echo view('layout/pied');
