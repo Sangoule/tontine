@@ -27,7 +27,7 @@ class Adherent extends BaseController{
                         "periodicite"=>$this->request->getPost('periodicite'),
                         "dateDeb"=>$dateDeb->format("Y/m/d"),
                         "nbEcheance"=>$this->request->getPost('nbEcheance'),
-                        "idAdherent"=>session()->get('idAdherent')
+                        "idResponsable"=>session()->get('id')
                     ];
                     $tontine=new TontineModel();
                     $tontine->insert($tontineData);

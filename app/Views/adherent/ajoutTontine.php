@@ -45,7 +45,7 @@
     
     <div class="row g-5">
     <div class="col-12">
-    <h1 class="mb-3">Créer un compte</h1>
+    <h1 class="mb-3">Ajout Tontine</h1>
     <?php if(isset($validation)):?>
      <div class="row alert alert-danger">
        <?= $validation->listErrors();?>
