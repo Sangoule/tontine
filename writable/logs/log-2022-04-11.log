@@ -1,0 +1,14 @@
+CRITICAL - 2022-04-11 03:28:41 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Controllers\Adherent.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 42, Array)
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->modifierTontine('starter-templat...')
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 04:05:00 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\tontine\app\Controllers\Adherent.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\tontine\system\CodeIgniter.php(832): App\Controllers\Adherent->modifierTontine('starter-templat...')
+#2 C:\laragon\www\tontine\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adherent))
+#3 C:\laragon\www\tontine\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

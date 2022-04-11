@@ -21,11 +21,15 @@
 
 
     <style>
+      
        #footer{
             display: block;
+            
             background-color: #000022;
             height: 100px;
             width:100%;
+            position: absolute;
+            bottom: 0;
         }
 
         #footer p{
@@ -82,7 +86,7 @@
     <link href="starter-template.css" rel="stylesheet">
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar d-flex flex-wrap navbar-expand-lg navbar-light bg-light ">
   <div class="container-fluid">
       <a href="<?= base_url() ?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <?= img('img/logo1.png'); ?>
