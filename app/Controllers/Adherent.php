@@ -4,9 +4,79 @@ namespace App\Controllers;
 use CodeIgniter\I18n\Time;
 use App\Models\TontineModel;
 use App\Models\AdherentModel;
+use App\Models\EcheanceModel;
+use App\Models\ParticipeModel;
 helper(['html','form']);
 class Adherent extends BaseController{
     
+    public function genererEcheance($idTontine){
+        //1. Recuperer les informations sur la tontine courante
+            $model=new TontineModel();
+            $maTontine= $model->tontine($idTontine);
+        //2. creer un tableau des echeances
+        $tabEcheance=[];
+        $dateDeb=Time::createFromFormat('Y-m-d',$maTontine["dateDeb"]);  
+        for($i=1;$i<=$maTontine["nbEcheance"];$i++){
+             $tabEcheance[]=['date'=>$dateDeb->toDateString(),'numero'=>$i,'idTontine'=>$idTontine];
+             if($maTontine["periodicite"]=="mensuelle"){
+                 $dateDeb=$dateDeb->addMonths(1);
+             }
+             else{
+                 $dateDeb=$dateDeb->addDays(7);
+             }
+        }
+        //3. inserer le tableau dans la base de données
+        $modelEcheance=new EcheanceModel();
+        $nbInserer=$modelEcheance->generer($tabEcheance);
+        //4. Revenir sur la page tontine avec un message de confirmation
+        $session=session();
+        $session->setFlashdata('successAjEcheance',$nbInserer.' échéance ajoutées');
+        return redirect()->to(base_url()."/adherent/tontine/$idTontine");
+    }    
+    public function adhererTontine($idTontine){
+        $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adhesion"];
+        if($this->request->getMethod()=="post"){
+            $reglesValid=[
+                "montant"=>["rules"=>"required|integer","errors"=>["required"=>"le montant est obligatoire","integer"=>"le montant doit etre un nombre"]],
+                
+            ];
+            if(!$this->validate($reglesValid)){
+                $data['validation']=$this->validator;
+            }
+            else{//donnees valides
+                    $participeData=[
+                        "idTontine"=>$idTontine,
+                        "montant"=>$this->request->getPost('montant'),
+                        "idAdherent"=>session()->get('id')
+                        
+                    ];
+                    $participe=new ParticipeModel();
+                    $participe->insert($participeData);
+                    $session=session();
+                    $session->setFlashdata('success ajout Adhesion', 'adhesion avec succes');
+                    return redirect()->to('adherent/adhesion');
+            }
+        }
+        else{
+            $data['idTontine']=$idTontine;
+        }
+        echo view('layout/entete',$data);
+        echo view('adherent/ajoutAdhesion');
+        echo view('layout/pied');
+    }
+    public function adhesion(){
+        $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adhesion"];
+        //1. instancier le modele et recupere les tontine dispo
+        $idAdherent=session()->get('id');
+        $model= new TontineModel();
+        $listeTontines=$model->listeTontines('idAdherent');
+        //2. ajouter la liste des donnees transmis a la vue 
+        $data['listeTontines']=$listeTontines;
+        // la vue
+        echo view('layout/entete',$data);
+        echo view('adherent/adhesion');
+        echo view('layout/pied');
+    }
     public function tontine($idTontine){
         $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adherentAcc"];
         $tontine=new TontineModel();
@@ -15,6 +85,11 @@ class Adherent extends BaseController{
         $modelAd= new AdherentModel();
         $participants=$modelAd->participer($idTontine);
         $data['participants']=$participants;
+        //5. Récuperer la liste des echeances
+        $modelEcheance = new EcheanceModel();
+        $echeance=$modelEcheance->echeancesTontine($idTontine);
+        //6. Ajouter la liste aux données transmises a la vue
+        $data['echeances']=$echeance;
         echo view('layout/entete',$data);
         echo view('adherent/tontine');
         echo view('layout/pied');

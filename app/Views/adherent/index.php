@@ -11,13 +11,14 @@
      </div>    
 <?php endif;?>
 <table class="table">
-    <tr>
-        <th>label</th>
-        <th>periodicite</th>
-        <th>dateDeb</th>
-        <th>Nombre d'Echeance</th>
-        <th>Action</th>
+<tr class="table-dark">
+      <th scope="row">label</th>
+      <td>periodicite</td>
+      <td>date de Debut</td>
+      <td>Nombre d'Echeance</td>
+      <th>...</th>
     </tr>
+
     <?php 
     if(!$listeTontineResp):
     ?>
