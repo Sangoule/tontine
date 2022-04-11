@@ -35,8 +35,8 @@
         <td><?= $tontine['nbEcheance']?></td>
         <td>
             <a href="<?= base_url()?>/adherent/modifierTontine/<?= $tontine['id']?> " class="btn btn-warning">Modifier</a>
-            <a onclick="return confirm('Voulez vous vraiment supprimer la tontine <?= $tontine['label']?>')" href="<?= base_url()?>/adherent/suprimerTontine/<?= $tontine['id']?>" class="btn btn-danger">Suprimer</a>
-            <a href="<?= base_url()?>/adherent/participantTontine/<?= $tontine['id']?>" class="btn btn-info">Participants</a>
+            <a onclick="return confirm('voulez vous vraiment suprimer la tontine <?= $tontine['label']?> ')" href="<?= base_url()?>/adherent/suprimerTontine/<?= $tontine['id']?>" class="btn btn-danger">Suprimer</a>
+            <a href="<?= base_url()?>/adherent/tontine/<?= $tontine['id']?>" class="btn btn-info">Participants</a>
         </td>
     </tr>
           <?php endforeach; ?>

@@ -98,12 +98,12 @@
     <div class="collapse navbar-collapse" id="navbarColor03">
     <?php if(session()->get("profil")=="adherent"): ?>
     <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?= base_url() ?>/adherent" class="nav-link <?= $menuActif=="adherentAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
+        <li class="nav-item me-sm-2"><a href="<?= base_url() ?>/adherent" class="nav-link <?= $menuActif=="adherentAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/adherent/adhesion" class="nav-link <?= $menuActif=="adhesion"?"active":"" ?> ">Adhesion</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link" >Déconnexion </a></li>
     </ul>
   <?php elseif (session()->get("profil")=="adminitrateur"): ?>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills ">
         <li class="nav-item"><a href="<?= base_url() ?>/administrateur" class="nav-link <?= $menuActif=="administrateurAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/adherent/gestion" class="nav-link <?= $menuActif=="gestionUtilisateurs"?"active":"" ?> ">gestion</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link`" >Déconnexion </a></li>

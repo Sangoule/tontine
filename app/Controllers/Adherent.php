@@ -1,32 +1,31 @@
 <?php
 namespace App\Controllers;
 //1. rendre accessible  la classe Model
-use App\Models\TontineModel;
 use CodeIgniter\I18n\Time;
+use App\Models\TontineModel;
+use App\Models\AdherentModel;
 helper(['html','form']);
 class Adherent extends BaseController{
     
     public function tontine($idTontine){
         $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adherentAcc"];
-        //1. recuperer sur la tontine courante
-        $tontine = new TontineModel();
+        $tontine=new TontineModel();
         $maTontine= $tontine->tontine($idTontine);
-
-        //2. ajouter a la liste des donnees transmise a la vue
         $data['maTontine']=$maTontine;
-        //3. la vue
+        $modelAd= new AdherentModel();
+        $participants=$modelAd->participer($idTontine);
+        $data['participants']=$participants;
         echo view('layout/entete',$data);
         echo view('adherent/tontine');
         echo view('layout/pied');
     }
-    public function supprimerTontine($idTontine){
-        $tontine = new TontineModel();
+    public function suprimerTontine($idTontine){
+        $tontine=new TontineModel();
         $tontine->delete($idTontine);
         $session=session();
-        $session->setFlashdata('success suppressiom de tontine', 'tontine supprimer avec succes');
+        $session->setFlashdata('success ajout de tontine', 'Supression effectuée');
         return redirect()->to(base_url().'/adherent');
     }
-
     public function modifierTontine($idTontine){
         $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adherentAcc"];
         $data['periodicite']=['mensuelle'=>'mensuelle','hebdomadaire'=>'hebdomadaire'];
