@@ -11,4 +11,9 @@ class EcheanceModel extends Model{
     function echeancesTontine($idTontine){
         return $this->where('idTontine',$idTontine)->findAll();
     }
+    function echeancesTab($tab){
+        
+       $cotisations=$this->select()->get()->getResultArray();;
+    return $cotisations;
+    }
 }

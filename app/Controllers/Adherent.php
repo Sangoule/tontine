@@ -197,12 +197,26 @@ class Adherent extends BaseController{
         $data=["titre"=>"Sama Tontine:: Accueil adherent", "menuActif"=>"adherentAcc"];
         //2. Instancier le modele Tontine
         $model= new TontineModel();
+        $modelAd= new AdherentModel();
+        
         //3. Recuperer l'id de l'adherent
         $idResponsable=session()->get('id');
+        $idTontine=$model->listeTontineid($idResponsable);
+        
+        $modelEcheance = new EcheanceModel();
+        $echeance=$modelEcheance->echeancesTab($idTontine);
+        //6. Ajouter la liste aux données transmises a la vue
+        $data['echeances']=$echeance;
+        
         //4, Recuperer la liste des  tontine a partir du modele
         $listeTontineResp=$model->listeTontineAdherent($idResponsable);
-        //5. ajouter cette liste  aux donnees transmi a la  vue
+        //5. Ajouter cette liste  aux donnees transmi a la  vue
         $data['listeTontineResp']=$listeTontineResp;
+        //6. Ajouter liste cotisation
+        $idAdherent=session()->get('id');
+        $cotisations=$modelAd->cotiserA($idAdherent);
+        //7.model
+        $data['cotisations']=$cotisations;
             echo view('layout/entete',$data);
             echo view('adherent/index');
             echo view('layout/pied'); 

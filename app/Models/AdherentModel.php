@@ -21,4 +21,33 @@ class AdherentModel extends Model{
         $cotisations[$coti["id"]]=$coti["nbCotis"];
         return $cotisations;
     }
+    function cotiserA($idAdherent){
+      
+        $cotis=$this->selectCount('adherent.id','nbCotis')
+                    ->select('adherent.id')
+                    ->join("cotiser c","c.idAdherent=adherent.id")
+                    ->join("echeance e","e.id=c.idEcheance")
+                    ->where('idAdherent',$idAdherent)
+                    ->groupBy("adherent.id")
+                    ->get()->getResultArray();
+             
+            
+        $cotisations=[];
+        foreach($cotis as $coti)
+        $cotisations[$coti["id"]]=$coti["nbCotis"];
+        return $cotisations;
+    }
+    function nombreAdherent(){
+       $nbA= $this->select('id')->where('adherent.profil','adherent')->get()->getResultArray();
+        return count($nbA);
+    }
+    function listeAdherent(){
+        return $this->get()->getResultArray();
+         
+     }
+     function listeAdherentrets($idAdherent){
+        return $this->where('id',$idAdherent)->first();
+         
+     }
+
 }

@@ -102,10 +102,10 @@
         <li class="nav-item"><a href="<?= base_url() ?>/adherent/adhesion" class="nav-link <?= $menuActif=="adhesion"?"active":"" ?> ">Adhesion</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link" >Déconnexion </a></li>
     </ul>
-  <?php elseif (session()->get("profil")=="adminitrateur"): ?>
+  <?php elseif (session()->get("profil")=="admin"): ?>
     <ul class="nav nav-pills ">
-        <li class="nav-item"><a href="<?= base_url() ?>/administrateur" class="nav-link <?= $menuActif=="administrateurAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="<?= base_url() ?>/adherent/gestion" class="nav-link <?= $menuActif=="gestionUtilisateurs"?"active":"" ?> ">gestion</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/admin" class="nav-link <?= $menuActif=="administrateurAcc"?"active":"" ?>" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="<?= base_url() ?>/admin/gerer" class="nav-link <?= $menuActif=="gestionUtilisateurs"?"active":"" ?> ">gestion</a></li>
         <li class="nav-item"><a href="<?= base_url() ?>/utilisateur/deconnexion" class="nav-link`" >Déconnexion </a></li>
     </ul>
     <?php else : ?>
@@ -148,3 +148,36 @@
 </header> -->
 
   <main class="<?= $menuActif=="connexion"?"form-signin text-center":"" ?>">
+  
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+	<?= link_tag("css/bootstrap.min.css") ?>
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+<!-- Custom styles for this template -->
+<link href="starter-template.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+
+

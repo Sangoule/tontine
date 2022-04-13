@@ -1,9 +1,3 @@
-
-
-    
-
-
-
   <main class="<?= $menuActif=="connexion"?"form-signin text-center":""?>">
       <h1>Login et password</h1>
       <?php if(isset($validation)):?>
@@ -19,8 +13,6 @@
       
 
     <form method="post">
-       
-
         <div class="form-floating">
           <input type="text" name="login" class="form-control" id="login" placeholder="Entrer le login" value="<?= set_value("login")?>">
           <label for="login">Email</label>
