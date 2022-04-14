@@ -76,7 +76,7 @@
               <?= form_dropdown('nbEcheance',$nbEcheance,set_value("nbEcheance"),['class'=>"form-control"]) ?>
             </div>           
           <hr class="my-4">
-          <input type="button" value="">
+          <?= form_submit(['name'=>'ajouter','class'=>"w-100 btn btn-primary btn-lg",'value'=>"Ajouter"]) ?>
         </form>
       </div>
       </div>

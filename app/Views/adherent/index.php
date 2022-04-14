@@ -10,7 +10,7 @@
        <?= session()->get("success ajout de tontine")?>
      </div>    
 <?php endif;?>
-<table class="table">
+<table class="table" width="100%">
 <tr class="table-dark">
       <th scope="row">label</th>
       <th>periodicite</th>
